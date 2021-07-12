@@ -1,14 +1,16 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Header from '../components/Header';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="">
       <Head>
-        <title>Create Next App</title>
+        <title>Google Docs App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header></Header>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+      {/* <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <h1 className="text-6xl font-bold">
           Welcome to{' '}
           <a className="text-blue-600" href="https://nextjs.org">
@@ -76,7 +78,7 @@ export default function Home() {
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
         </a>
-      </footer>
+      </footer> */}
     </div>
-  )
+  );
 }
